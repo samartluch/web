@@ -294,6 +294,30 @@ body {
 .footer-column ul li a:hover {
   color: #fff;
 }
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #f2a65a; 
+}
 
 .footer-icons {
   display: flex;
