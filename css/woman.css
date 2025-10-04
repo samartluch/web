@@ -6,21 +6,21 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   background: #f9f9f9;
   color: black;
   font-family: 'Poppins', sans-serif;
 }
 
 .banner {
-  width: 100%;
-  height: 100vh;
-  background: url(https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2017/12/New-Ethos-Watch-Boutique-Pune-brands-retail-7.jpg);
+
+  background: url(/img/0c00d533-0ac3-4bce-b1bf-b8cb2e194f75.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+
 }
+
 .navbar {
   background-color: #000;
   display: flex;
@@ -32,13 +32,15 @@ body {
 .navbar img {
   height: 60px;
   width: 50px;
+  object-fit: contain;
+
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -58,7 +60,7 @@ body {
 }
 
 .promo-banner {
-  background:#d2a679;
+  background: #d2a679;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,6 +106,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
 .btn-1 {
   width: 180px;
   padding: 12px 0;
@@ -119,12 +122,14 @@ body {
   overflow: hidden;
   transition: 0.4s;
 }
+
 /* ----2-- */
 .watch-sale {
   background-color: #f9f9f9;
   padding: 30px 15px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+
 }
 
 .watch-sale h2 {
@@ -145,7 +150,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
 
@@ -195,13 +200,16 @@ body {
   color: #666;
   font-size: 14px;
 }
+
 /* ---3-- */
 .watch-save {
   background-color: #f9f9f9;
   padding: 30px 15px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin: auto;
 }
+
 .picter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -209,12 +217,24 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  /* background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+  transition: transform 0.3s; */
+  width: 80%;
+
+  /* padding:10px; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+}
+
+.w-text {
+  margin-bottom: 30px;
+  color: #d2a679;
+  font-size: 50px;
 }
 
 .card:hover {
@@ -222,9 +242,10 @@ body {
 }
 
 .card img {
-  width: 70%;
+  width: 100%;
+  height: 30%;
   height: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-bottom: 15px;
 }
 
@@ -232,6 +253,15 @@ body {
   font-size: 18px;
   margin-bottom: 10px;
   color: #444;
+}
+
+.picture-text {
+  padding: 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
 }
 
 .price {
@@ -263,8 +293,28 @@ body {
   color: #666;
   font-size: 14px;
 }
+
+.h2 {
+
+  margin: bottom 30px;
+  color: #d2a679;
+  font-size: 50px;
+}
+
 /* ---3---- */
 .card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fan-h2 {
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 30px;
+  color: #d2a679;
+}
+
+.fan-group {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -275,7 +325,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fan img {
@@ -293,7 +343,7 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   opacity: 0;
   display: flex;
@@ -333,6 +383,7 @@ body {
   background: #000;
   color: #fff;
 }
+
 .site-footer {
   background-color: #1d1c1b;
   color: #ccc;
@@ -372,12 +423,14 @@ body {
 .footer-column ul li a:hover {
   color: #fff;
 }
+
 .footer-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -394,7 +447,7 @@ body {
 }
 
 .nav-list li a:hover {
-  color: #f2a65a; 
+  color: #f2a65a;
 }
 
 .footer-icons {
@@ -426,4 +479,155 @@ body {
   text-align: right;
   font-size: 14px;
   color: #999;
+}
+
+/* Tablet */
+@media (max-width:900px) {
+  .promo-banner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    height: 35vh;
+    padding: 20px;
+
+  }
+
+  .promo-watch img {
+    width: 300px;
+    height: 30vh;
+    margin-left: 0px;
+    margin-top: 10px;
+
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .fan-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .watch-save {
+    padding: 0;
+    margin: 0;
+    padding: 10px 40px;
+    background: transparent;
+    /* margin-left:80px; */
+  }
+
+
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+  .footer-nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+}
+/* mobile phone */
+@media (max-width:400px) {
+  .promo-banner {
+    width: 90%;
+    flex-direction: row;
+    text-align: center;
+    height: 45vh;
+    padding: 20px;
+  }
+
+  .promo-watch img {
+    width: 150px;
+    height: 30vh;
+    margin-left: 0px;
+    margin-top: 10px;
+
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .sp {
+    font-size: 12px;
+  }
+
+  .promo-box p {
+    font-size: 24px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .fan-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .watch-save {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding: 10px 40px;
+    background: transparent;
+    /* margin-left:80px; */
+  }
+
+  .promo-watch img {
+    width: 150px;
+    height: 30vh;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .watch-save h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .w-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: start;
+    padding: 10px 0px;
+
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+
+  }
+
 }

@@ -275,6 +275,8 @@ body {
   font-size: 18px;
 }
 
+
+
 .footer-column ul {
   list-style: none;
   padding: 0;
@@ -350,3 +352,13 @@ body {
   color: #999;
 }
 
+@media (max-width: 900px){
+  .footer-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+      
+  }
+  
+
+}

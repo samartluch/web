@@ -6,7 +6,7 @@
 }
 body {
   background: #f9f9f9;
-  color:black;
+  color: #000;
   font-family: 'Poppins', sans-serif;
 }
 .banner {
@@ -53,7 +53,7 @@ body {
 
 .navbar ul li a:hover {
   background-color: #d2a679; 
-  color: #111;
+  /* color: #111; */
 }
 .content {
   flex: 1;
@@ -296,4 +296,12 @@ button:hover::before {
   text-align: right;
   font-size: 14px;
   color: #999;
+}
+@media (max-width: 900px){
+  .footer-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+      
+  }
 }
